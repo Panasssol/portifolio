@@ -259,6 +259,34 @@ form button:hover {
     background-color: var(--accent-hover);
 }
 
+form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Honeypot: hidden from humans, still present for bots to trip on. */
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form-status {
+    margin-top: 12px;
+    min-height: 1.2em;
+    font-size: 0.95rem;
+}
+
+.form-status--success {
+    color: #4ade80;
+}
+
+.form-status--error {
+    color: #f87171;
+}
+
 .social-links {
     list-style: none;
     margin-bottom: 24px;
